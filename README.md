@@ -14,6 +14,6 @@ The Raspberry Pi is a great tool for many projects, but one of its major problem
 
 ## Raspberry Pi Pico Installation
 
-1. Install the latest circuitpython .UF2 file from Adafruit.
+1. Install the latest circuitpython [.UF2 file from Adafruit](https://circuitpython.org/board/raspberry_pi_pico/).
 2. Wire up your pico as shown.
 3. Upload the contents of pico-reciever to the board.
