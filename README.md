@@ -22,6 +22,6 @@ The Raspberry Pi is a great tool for many projects, but one of its major problem
 
 The pinout for the pico and rpi4 are as follows:
 
-![pico pinout](img/pico-pinout.png)
+![pico pinout](img/Pico-R3-A4-Pinout.pdf)
 
 ![rpi4 pinout](img/R-Pi-4-GPIO-Pinout.jpg)
