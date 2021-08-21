@@ -18,5 +18,5 @@ cp power_on_off.py /home/pi/scripts/power_on_off.py
 # Tell the installer to run this in the rc.local file
 echo "In order to run this script, you must add this line in the /etc/rc.local file (before the exit):"
 cat <<EOF
-python3 /home/pi/scripts/power_on_off.py &
+sudo python3 /home/pi/scripts/power_on_off.py &
 EOF

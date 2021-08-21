@@ -22,7 +22,7 @@ while True:
     button_state = GPIO.input( BUTTON_PIN )
 
     # check to see if it has been pushed
-    if button_state != old_button_state and button_state == FALSE:
+    if button_state != old_button_state and button_state == False:
         subprocess.call(
             "shutdown -h now",
             shell  = True,
