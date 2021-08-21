@@ -11,7 +11,7 @@ remote_codes = {
 
 def main():
     # init the ir receiver and decoder
-    pulsein = pulseio.PulseIn(board.GP15, maxlen=200, idle_state=True)
+    pulsein = pulseio.PulseIn(board.GP14, maxlen=200, idle_state=True)
     pulsein.clear()
     pulsein.resume()
     decoder = adafruit_irremote.GenericDecode()
@@ -26,7 +26,6 @@ def main():
         pulses = decoder.read_pulses(pulsein) # get the pulses from the remote
         if len(pulses) == 0: # skip if no pulses
             continue
-#         print("Heard", len(pulses), "Pulses:", pulses)
         
         if is_power_signal( pulses ):
             print( "Heard a power signal" )

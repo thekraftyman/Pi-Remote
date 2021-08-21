@@ -19,12 +19,22 @@ class Button:
         return self.button.value
 
 def main():
-    button_pin = GP14
+    # button
+    button_pin = board.GP17
     button = Button( button_pin )
+    
+    # indicator led
+    led = digitalio.DigitalInOut( board.GP16 )
+    led.direction = digitalio.Direction.OUTPUT
+    led.value = False
 
     while True:
         if button:
             print("Button was pressed!")
+            if led.value == False:
+                led.value = True
+            else:
+                led.value = False
         sleep(0.1)
 
 if __name__ == '__main__':
