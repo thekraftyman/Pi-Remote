@@ -17,3 +17,11 @@ The Raspberry Pi is a great tool for many projects, but one of its major problem
 1. Install the latest circuitpython [.UF2 file from Adafruit](https://circuitpython.org/board/raspberry_pi_pico/).
 2. Wire up your pico as shown.
 3. Upload the contents of pico-reciever to the board.
+
+## Reference
+
+The pinout for the pico and rpi4 are as follows:
+
+![pico pinout](img/pico-pinout.png)
+
+![rpi4 pinout](img/R-Pi-4-GPIO-Pinout.jpg)
