@@ -99,12 +99,16 @@ def average_pulse( pulse_list ):
 
 def main():
     # button
-    button_pin = board.GP17
-    button = Button( button_pin )
+#     button_pin = board.GP17
+#     button = Button( button_pin )
     
     # led
     led_pin = board.GP16
     led = LED( led_pin )
+    
+    # optocoupler
+    opto_pin = board.GP17
+    opto = LED( opto_pin )
     
     # ir_receiver
     ir_receiver_pin = board.GP14
@@ -117,12 +121,16 @@ def main():
         if len(pulses) != 0: # skip if no pulses, but we'll check the button
             if is_power_signal( pulses ):
                 print( "Heard an ir power signal" )
-                led.cycle()
+                led.on()
+                opto.on()
+                sleep(1)
+                opto.off()
+                led.off()
         
-        if button.val:
-            print("Pressed the button")
-            led.cycle()
-            sleep( 0.5 )
+#         if button.val:
+#             print("Pressed the button")
+#             led.cycle()
+#             sleep( 0.5 )
     
 if __name__ == '__main__':
     main()
