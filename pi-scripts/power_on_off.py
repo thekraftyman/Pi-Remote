@@ -32,4 +32,4 @@ while True:
 
         old_button_state = button_state # prevent second press during shutdown
 
-    sleep( 0.1 )
+    time.sleep( 0.1 )
